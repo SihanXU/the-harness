@@ -1,0 +1,31 @@
+PROTOTYPE (artifacts/agent-plan/proto.js, terminal version)
+----------------------------------------------------------------------------
+— QQ · Weekend hike: Ming asked for photos on the owner's computer; refused (only the owner may have it touch files)
+Fixed; it needs a push to origin/main.
+● Push to origin/main? git push origin main · A7
+  ❯ 1. Allow
+    2. Decline, saying why
+  or answer in the system notification, or reply "A7 approve" in your QQ private chat; cancelled after 30 minutes
+▸ git push origin main · ✓ done · allowed
+＋ noted  pull requests in English · private · memory/pr-english.md
+＋ node  root › battery below 20% → stop, remind the owner · added by owner
+＋ learned  on a CI failure, rerun only the failing test · own test
+↑ effective  summarising the group · 5 uses · 4 done
+
+OURS
+----------------------------------------------------------------------------
+— QQ · Weekend hike: qq.send refused (only the owner may have it touch files)
+Fixed; it needs a push to origin/main.
+● git push origin main · A7
+▸ task · git push origin main
+  ✓ task done — approved
+＋ noted  pull requests in English · private
+＋ node  root › battery below 20% · added by owner
+＋ learned  on a CI failure, rerun only the failing test · own test
+↑ effective  summarising the group
+(ask box)
+git push origin main  · A7
+  or answer in the system notification, or reply "A7 approve" in your private chat; cancelled after 30 minutes
+  1. Allow
+  2. Decline, saying why
+(lines starting with — are printed only; they are not in the main conversation's record)

@@ -1,0 +1,19 @@
+PROTOTYPE (artifacts/agent-plan/proto.js, terminal version)
+----------------------------------------------------------------------------
+$ harness host
+host running since 08:00 · pid 4120
+  identities  default Yu (3 places) · work Work assistant (2 places)
+  chats       5 · 1 working
+  starts at login · yes
+$ harness host stop
+  1 action in progress → cancelled
+✓ stopped · starts again at the next login
+  harness host uninstall · no longer start at login
+
+OURS
+----------------------------------------------------------------------------
+$ harness host
+host running since 11-25 18:36 · pid 30328 · http://127.0.0.1:8780 · version 0.87.0
+  identities  default Yu (1 places)
+  chats       2 · 0 working
+  starts at login · no (harness host install)

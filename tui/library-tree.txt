@@ -1,0 +1,44 @@
+PROTOTYPE (artifacts/agent-plan/proto.js, terminal version)
+----------------------------------------------------------------------------
+Library
+› tree › root
+──────────────────────────────────────────────────────────────────────
+  1.   named or aimed at it → wake it                             built in
+  2.   an outcome failed or unknown → wake it                     built in
+  3.   needs approval → remind the owner                          built in
+❯ 4.   battery below 20% → stop, remind the owner to plug in      added by owner
+  5. ▸ working on the desktop                                     5 nodes
+  6. ▸ in the browser                                             4 nodes
+  7. ▸ in a QQ group                                              1 nodes
+↑ ↓ move · Enter open · ← up · m move under another branch · u undo · x disable · esc back
+(Enter on 5:)
+› tree › root › working on the desktop
+  1.   input refused (owner using it) → hold input, wake it       effective
+  2.   a system update prompt → choose "later"                    effective
+❯ 3. ▸ in a spreadsheet                                           3 nodes
+
+OURS
+----------------------------------------------------------------------------
+$ harness library tree
+tree › root
+────────────────────────────────────────────────────────────────────────────
+   1.   named or aimed at it → wake it                             built in · 0 uses  [named]
+   2.   an action ended failed or unknown → wake it                built in · 0 uses  [failed]
+   3.   needs approval → remind the owner                          built in · 0 uses  [approval]
+   4.   battery below 20% → stop, remind the owner to plug in      added by owner · 0 uses  [battery]
+   5. ▸ working on the desktop                                     3 nodes  [desktop]
+
+$ harness library tree desktop
+tree › root › working on the desktop
+────────────────────────────────────────────────────────────────────────────
+   1.   input refused (owner using it) → hold input, wake it       effective · 0 uses  [input refused]
+   2. ▸ in a spreadsheet                                           1 nodes  [spreadsheet]
+
+$ harness library tree desktop/spreadsheet
+tree › root › working on the desktop › in a spreadsheet
+────────────────────────────────────────────────────────────────────────────
+   1.   "save changes?" pops up → wake it                          own test · 0 uses  [save prompt]
+
+/library › tree › root › working on the desktop (TUI rows)
+  1.   input refused (owner using it) → hold input, wake it     effective
+  2. ▸ in a spreadsheet                                         1 nodes

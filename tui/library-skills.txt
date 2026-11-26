@@ -1,0 +1,17 @@
+PROTOTYPE (artifacts/agent-plan/proto.js, terminal version)
+----------------------------------------------------------------------------
+Library
+› type to filter
+──────────────────────────────────────────────────────────────────────
+skills
+❯ on a CI failure, rerun only the failing test   own test   1 use    project · 09:56
+  summarising the group                          effective  5 uses   QQ · 11-20
+↑ ↓ move · Enter open · d diff · u undo · esc back
+
+OURS
+----------------------------------------------------------------------------
+$ harness library skills
+skills of default
+  no skills yet
+
+(no skill learned in this transcript's identity; the row form is name, evidence, uses, source chat · time, as test_agent_frontends checks)

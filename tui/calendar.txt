@@ -1,0 +1,55 @@
+PROTOTYPE (artifacts/agent-plan/proto.js, terminal version)
+----------------------------------------------------------------------------
+Calendar · today, Wed 11-25
+on its own $0.71 / $1.50 · $0.50 kept for you
+────────────────────────────────────────────────────────────────────────────
+last night 21:30–24:00 asleep · the tree noted 2 things (Enter)
+00:00  ●  woke    budget reset; what piled up woke it
+00:01  ✓  own     answered the meeting time in the group
+00:20  ●  own     fixed CI                                       push waits for you · A7
+09:00  ✓  own     gathered report material                       for yours: Fri weekly report
+10:52  ⊘  own     spreadsheet · safety refused: you had the mouse it chose to wait
+13:00  ✓  own     spreadsheet done                               you left the computer
+15:00  ✓  learn   practised booking on a copy                    learned 1 skill
+
+next
+Fri 09 ·  yours   weekly report
+↑ ↓ move · Enter open · a add · x remove · p pause on-its-own · esc back
+
+OURS
+----------------------------------------------------------------------------
+$ harness calendar list
+Calendar · Mon 11-23 – Sun 11-29 · default
+on its own $0.00 / $1.50 · $0.50 kept for you
+────────────────────────────────────────────────────────────────────────────
+Tue 11-24
+  21:30     ☾  asleep   asleep                                            until 00:00
+Wed 11-25
+  00:01     ✓  own      answered the meeting time in the group          
+  00:20     ·  own      fixed CI                                          push waits for you · A7
+  09:00     ✓  own      gathered report material                          for yours: Fri weekly report
+  10:52     ⊘  own      spreadsheet                                       safety refused · it chose to wait
+  13:00     ✓  own      spreadsheet done                                  you left the computer
+  15:00     ✓  own      practised booking on a copy                       learned 1 skill
+
+next
+  Fri 09:00 ·  yours    weekly report                                     [c12d875c9]
+
+on its own: on
+
+$ harness calendar pause
+✓ paused on its own: it still answers you and mentions (default)
+
+/calendar (TUI view rows)
+  Tue 11-24
+  21:30     ☾  asleep   asleep                                           until 00:00
+  Wed 11-25
+  00:01     ✓  own      answered the meeting time in the group           
+  00:20     ·  own      fixed CI                                         push waits for you · A7
+  09:00     ✓  own      gathered report material                         for yours: Fri weekly report
+  10:52     ⊘  own      spreadsheet                                      safety refused · it chose to wait
+  13:00     ✓  own      spreadsheet done                                 you left the computer
+  15:00     ✓  own      practised booking on a copy                      learned 1 skill
+  next
+  Fri 09:00 ·  yours    weekly report                                    
+↑ ↓ move · Enter open · a add · x remove · p pause on its own · ← n weeks · esc back

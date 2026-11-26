@@ -1,0 +1,20 @@
+PROTOTYPE (artifacts/agent-plan/proto.js, terminal version)
+----------------------------------------------------------------------------
+Library
+› memory
+──────────────────────────────────────────────────────────────────────
+memory
+❯ pull requests in English        private     main · now
+  the owner hikes on weekends     private     main · 11-16
+  this group meets at 7:30        this chat   QQ · 09:30
+private: your own places only · this chat: where it was written · e edit · d delete · esc back
+
+OURS
+----------------------------------------------------------------------------
+$ harness library memory
+memory of default
+  memory                                       scope      source
+  pull requests in English                     private    main · 11-25 19:36
+  the owner hikes on weekends                  private    main · 11-25 19:36
+  this group meets at 7:30                     this chat  place-qq-group-123 · 11-25 19:36
+  private: your own places only · this chat: where it was written

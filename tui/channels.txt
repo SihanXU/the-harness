@@ -1,0 +1,38 @@
+PROTOTYPE (artifacts/agent-plan/proto.js, terminal version)
+----------------------------------------------------------------------------
+$ harness channels add qq
+Which identity answers on this QQ account?
+  ❯ default Yu (current)
+    work Work assistant
+  ✓ default
+Private messages from strangers? [pairing] / allowlist / open / off  pairing
+installing the OneBot channel package… scan with the QQ account Yu will use:
+  (QR code)
+  waiting for the scan · ✓ done
+Which groups? space ticks · none by default
+  [x] Weekend hike · when named
+  [ ] Family   [ ] Company all-hands   [ ] Second-hand market
+Bind the owner: from your own QQ, send 839 214 · bound QQ 10241
+$ harness channels pair approve qq 4KQ-7Z2
+✓ paired QQ 73315 · may ask it for things in that private chat only
+
+OURS
+----------------------------------------------------------------------------
+$ harness channels add qq --dm pairing --no-wait
+✓ qq added to default; harness channels list shows when it is online
+(groups the account is in: test group 123, another group 456; entered 123)
+Bind the owner: from your own account, send 986137 to it in a private chat
+
+$ harness channels pair
+  441B2C · qq · 73315 (user73315) · until 20:36
+
+$ harness channels pair approve qq 441B2C
+✓ paired qq 73315 · may ask it for things in that private chat only
+
+$ harness channels list
+channels of default
+  account    state      dm         groups               owner
+  qq         online     pairing    1 entered, mention   bound QQ 10241
+  paired on qq: 73315
+
+(interactive add asks the identity, the policy, then waits for the login, lists the groups to tick and waits for the owner's code; no QR code: the OneBot implementation shows its own login)
